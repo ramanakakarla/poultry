@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+		<!-- <property name="hbm2ddl.auto">update</property> -->
+		<property name="show_sql">true</property>
+		<mapping class="com.poultry.dao.entities.Customer" />
+		<mapping class="com.poultry.dao.entities.CustomerTransaction" />
+		<mapping class="com.poultry.dao.entities.Expenditure" />
+		<mapping class="com.poultry.dao.entities.Product" />
+		<mapping class="com.poultry.dao.entities.ProductDailyPrice" />
+		<mapping class="com.poultry.dao.entities.PurchaseM" />
+		<mapping class="com.poultry.dao.entities.PurchaseType" />
+		<mapping class="com.poultry.dao.entities.Role" />
+		<mapping class="com.poultry.dao.entities.Stock" />
+		<mapping class="com.poultry.dao.entities.User" />
+		<mapping class="com.poultry.dao.entities.Vendor" />
+
+	</session-factory>
+</hibernate-configuration>
